@@ -3,6 +3,8 @@ import bgImg from "../assets/bgimg.png";
 import Hero from "../components/Hero";
 import Issues from "../components/Issues";
 import Solutions from "../components/Solutions";
+import Counter from "../components/Counter";
+import Footer from "../components/Footer";
 
 function Landing() {
   return (
@@ -12,6 +14,8 @@ function Landing() {
         <Hero />
         <Issues />
         <Solutions />
+        <Counter />
+        <Footer />
       </div>
     </div>
   );

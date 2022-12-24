@@ -6,7 +6,12 @@ module.exports = {
       poppins: ["Poppins"],
       alice: ["Alice"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        greenish: "#3d5725",
+        greenishtxt: "#96b26c",
+      },
+    },
   },
   plugins: [],
 };
