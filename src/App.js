@@ -1,18 +1,22 @@
-import Navbar from "./components/Navbar";
-import heroImg from "./assets/heroImg.jpg";
-import Hero from "./components/Hero";
+
+import Plant from './screens/Form';
+import Landing from './screens/Landing';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
 function App() {
   return (
-    <div className="App font-poppins">
-      <div style={{ backgroundImage: `url(${heroImg})` }}>
-        <Navbar />
-        <Hero />
-      </div>
-      <div>
-        <h1>Card</h1>
-      </div>
-    </div>
-  );
+    <React.Fragment>
+      <BrowserRouter>
+        <Routes>
+          <Route path = "/plant" element={<Plant/>}/>
+          <Route path = "/" element={<Landing/>}/>
+        </Routes>
+      </BrowserRouter>
+    </React.Fragment>
+  )
+  
 }
 
 export default App;
